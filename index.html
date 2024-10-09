@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="CZI-P041_bake.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.11470158164273792m 0.1723226370503731m 0.16490504037623066m" data-normal="-0.535921617826762m 0.06716396984610104m 0.8415919561761854m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Bidjsnd</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="0.07584317353318712m 0.2794742563119274m 0.08173572374339466m" data-normal="0.05279525660150627m 0.4763100172526995m 0.8776909640329643m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">kmm,xs</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.17088193178602828m 0.2472532697974043m -0.11689091965716025m" data-normal="0.5719600502398752m 0.41589178301197066m -0.7070330443145662m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">nm m</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
